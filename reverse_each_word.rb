@@ -1,9 +1,12 @@
+require 'pry'
+
+
 def reverse_each_word(str)
 arrayStr = str.split(" ")
 
 newArr =[]
-arrayStr.collect do |string|
-  
+arrayStr.each do |string|
+ binding.pry  
    newArr << string.reverse
 
 end
